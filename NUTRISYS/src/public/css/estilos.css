@@ -1,0 +1,224 @@
+:root{
+
+    --primario: #00d500;
+    --secundario: #00aa00;
+    --blanco: #fff;
+    --negro: #000;
+    --grisClaro: #f0f3f4;
+    --grisMedio: #e5e5e5;
+    --grisOscuro: #acadac;
+
+    --fuentePrincipal: 'Amatic+SC', cursive;
+}
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+html, body{
+    height:100%;
+    margin: 0;
+  }
+
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+
+h1{
+    text-align: center;
+    color: var(--negro);
+    font-family: var(--fuentePrincipal);
+    font-size: 10rem;
+}
+
+h2{
+    color: var(--negro);
+    font-family: var(--fuentePrincipal);
+    font-size: 2rem;
+} 
+
+.flex-imageItem{
+    width: 10rem;
+    height: 10rem;
+    margin: 1rem  auto;
+}
+
+.flex-imageItem--small{
+    width: 5rem;
+    height: 5rem;
+    margin: 1rem  auto;
+}
+
+
+.menu_principal
+{
+    background-color: var(--primario);
+    width: 20%;
+    max-height: 100%;
+    min-width: 15%;
+}
+
+
+.name_app{
+    margin: 0 auto;
+    font-size: 3rem;
+    color: var(--blanco);
+    font-family: var(--fuentePrincipal);
+}
+
+.navegacion{
+    display: flex;
+    margin: 0 auto;
+    justify-content: right;
+}
+
+.navegacion_logo{
+    background-color: var(--secundario);
+    max-width: 20%;
+    min-width: 20%;
+    display: flex;
+}
+
+.navegacion_opciones{
+    width: 80%;
+    display: flex;
+    background-color: white;
+    align-items: center;
+    justify-content:space-around;
+}
+
+.flex-textItem{
+    margin: auto;
+    text-align: center;
+}
+
+.enlace-modulo{
+
+    padding: 1rem;
+    text-decoration: none;
+    font-size: 2rem;
+    color: var(--negro);
+    font-family: var(--fuentePrincipal);
+    font-weight: bold;
+}
+
+.contenedor-aplicaciones{
+
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-between;
+    max-height: 100% ;
+}
+
+.enlace-modulo:first-child{
+    margin-top: 5rem;
+}
+
+.enlace-modulo:last-child{
+    margin-bottom: 50.5rem;
+}
+
+.enlace-modulo:hover{
+    background-color: var(--secundario);
+    color: var(--blanco);
+}
+
+.contenido__principal{
+    max-width: 80%;
+    background-color: var(--grisClaro);
+    float: left;
+    padding-right: 80%;
+    
+}
+
+.core{
+    display: flex;
+    height: 100%;
+}
+
+.contenido__section{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--grisMedio);
+    margin-left: 3rem;
+    margin-top: 3rem;
+    width: 120rem;
+    padding: 0 5rem;
+}
+
+.contenido__section--datosPersonales{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: var(--grisMedio);
+    margin-left: 3rem;
+    margin-top: 3rem;
+    width: 120rem;
+}
+
+.titulo__datosPersonales{
+    background-color: var(--grisOscuro);
+    margin: 2rem;
+}
+
+.contenido__datosPersonales{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(5, 1fr);
+    margin-left: 4rem;
+    padding-bottom: 2rem;
+}
+
+.info__datosPersonales{
+    display: flex;
+    flex-direction: row;
+    column-gap: 2rem;
+}
+
+.btn__crear{
+    margin: 2rem;
+}
+
+/* Texto */
+
+.titulo{
+    font-weight: normal;
+    color: var(--grisOscuro);
+    font-size: 3rem;
+}
+
+.subtitulo{
+    font-weight: bold;
+    text-decoration: var(--negro);
+}
+
+.normal{
+    font-size: 2rem;
+    color: var(--negro);
+    font-family: var(--fuentePrincipal);
+    font-weight: bold;
+}
+
+/* Utilidades */
+
+.input__padding{
+    margin: 1rem 0;
+    width: 50%;
+    font-size: 2rem;
+    font-family: var(--fuentePrincipal);
+    
+}
+
+.input__text{
+    width: 20%;
+}
+
+.logo__manzana{
+   
+    width: 8rem;
+    height: 8rem;
+    margin: 1rem  0rem 1rem 4rem;
+
+}

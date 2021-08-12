@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nutri-Sys - Registrar Paciente</title>
+    <link rel="stylesheet" href="/css/normalize.css"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet">   
+    <link rel="stylesheet" href="/css/estilos_registrarPacienteNuevo.css"> 
+    <script src="/js/pacientes/codigo_registrarPacienteNuevo.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+<body>
+    <div class="aside">
+        <div class="logo">
+            <img class="logo__manzana " src="/img/Logo Final Blanco sin texto-01.png" alt="Imagen Logo">
+            <h1 class="name_app flex__textItem" >Nutry-Sys</h1>
+        </div>
+        <div class="menuPrincipal">
+            <div class="contenedorOpciones">
+                <a class="contenedorOpciones__opcion" href="">Organizador</a>
+                <a class="contenedorOpciones__opcion" href="./buscarpaciente">Historia Clínica</a>
+                <a class="contenedorOpciones__opcion" href="">Reportes</a>
+                <a class="contenedorOpciones__opcion" href="">Administración de Usuarios</a>
+            </div>
+        </div>
+    </div>
+    <div class="contenidoPrincipal">
+        <div class="accesoRapido">
+            <img class="flex__imageItem--small" src="/img/MenuLogo.png" alt="Imagen Logo">
+            <h2 class="flex__textItem titulo">Historia Clínica</h2>
+            <img class="flex__imageItem--small" src="/img/NotifyLogo.png" alt="Imagen Logo">
+            <img class="flex__imageItem--small" src="/img/UserLogo.png" alt="Imagen Logo">
+            <h2 class="flex__textItem">Apellido, Nombre</h2>
+        </div>
+        <div class="contenidoPagina">
+            <article class="contenido__article">
+                <section class="contenido__section"> 
+                    <h2 class="titulo ">Nuevo Paciente</h2>
+                    <input type="button" value="Crear Paciente" class="normal btn__crear" onclick="crearPaciente()">
+                </section>
+                <section class="contenido__section--datosPersonales"> 
+                    <div class="titulo__datosPersonales">
+                        <h2 style="margin-left: 2rem;">Datos Personales</h2>
+                    </div>
+                    <div class="contenido__datosPersonales">
+                        <section class="info__datosPersonales">
+                            <h2 class="input__text">*Documento:</h2>
+                            <input type="number" id="documento__paciente" class="input__padding">
+                        </section>
+                        <section class="info__datosPersonales">
+                            <h2 class="input__text">**Mutual:</h2>
+                            <input type="text" class="input__padding" id="mutual__paciente">
+                        </section>
+                        <section class="info__datosPersonales">
+                            <h2 class="input__text">*Dirección:</h2>
+                            <input type="text" class="input__padding" id="direccion__paciente">
+                        </section>
+                        <section class="info__datosPersonales">
+                            <h2 class="input__text">Mutual2:</h2>
+                            <input type="text" class="input__padding" id="mutual__paciente2">
+                        </section>
+                        <section class="info__datosPersonales">
+                            <h2 class="input__text">*Apellido/s:</h2>
+                            <input type="text" id="apellido__paciente" class="input__padding">
+                        </section>
+                        <section class="info__datosPersonales">
+                            <h2 class="input__text">*Nombre/s:</h2>
+                            <input type="text" id="nombre__paciente" class="input__padding">
+                        </section>
+                        <section class="info__datosPersonales">
+                            <h2 class="input__text">*Celular:</h2>
+                            <input type="number" id="celular__paciente" class="input__padding">
+                        </section>
+                        <section class="info__datosPersonales">
+                            <h2 class="input__text">*Correo:</h2>
+                            <input type="email" id="correo__paciente" class="input__padding">
+                        </section>
+                        <section class="info__datosPersonales">
+                            <h2 class="input__text">Teléfono:</h2>
+                            <input type="number" id="telefono__paciente" class="input__padding">
+                        </section>
+                        <section class="info__datosPersonales">
+                            <h2 class="input__text">*Fecha Nacimiento:</h2>
+                            <input type="date" id="fechaNac__paciente" class="input__padding" onchange="calcularEdad()">
+                        </section>
+                        <section class="info__datosPersonales">
+                            <h2 class="input__text">Edad:</h2>
+                            <input type="text" class="input__padding" id="edad__paciente" readonly style="background-color: rgb(194, 194, 194);">
+                        </section>
+                        <section class="info__datosPersonales">
+                            <h2 style="font-weight: normal;">* Campos Obligatorios ** Sin mutual (Particular)</h2>
+                        </section>
+                    </div>
+                </section>
+            </article>
+        </div>
+
+    </div>
+</body>
+</html>

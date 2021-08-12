@@ -1,0 +1,21 @@
+ @api = http://localhost:3000
+
+ ###
+
+POST {{api}}/fichas
+Content-Type: application/json
+
+{
+    "anms_id": 1,
+    "anms_nrohc": 111,
+    "anms_fecharegistro": "01/01/2021",
+    "anms_observaciones": "observacion",
+    "danms_id": 1,
+    "danms_linea": 1,
+    "danms_iditem": 1,
+    "danms_consumido": 1,
+    "danms_cantidad": 1,
+    "danms_observaciones": "observacion2"
+}
+
+###

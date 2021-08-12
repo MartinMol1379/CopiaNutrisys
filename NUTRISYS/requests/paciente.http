@@ -1,0 +1,44 @@
+ @api = http://localhost:3000
+
+GET {{api}}/pacientes
+
+###
+
+POST {{api}}/pacientes
+Content-Type: application/json
+
+{
+    "pac_nrodoc": 40244654,
+    "pac_apellido": "Jones",
+    "pac_nombre": "Jessica",
+    "pac_fechanacimiento": "01/01/1993",
+    "pac_telefono1": "9876543212",
+    "pac_telefono2": "432432243",
+    "pac_correo": "jj.jj@gmail.com",
+    "pac_mutual": "medife",
+    "pac_direccion": "Alto Verde 321",
+    "pac_mutual2": "Apross"
+}
+
+###
+
+GET {{api}}/pacienteap/i
+###
+
+DELETE {{api}}/pacientes/1004
+
+###
+
+PUT {{api}}/pacientes/1002
+Content-Type: application/json
+
+{
+    "pac_tipodoc": "DNI",
+    "pac_nrodoc": 1111111,
+    "pac_apellido": "Jones",
+    "pac_nombre": "Jessica",
+    "pac_telefono1": "9876543212",
+    "pac_correo": "jj.jj@gmail.com",
+    "pac_fechanacimiento": "10/10/1991",
+    "pac_idmutual":1
+}

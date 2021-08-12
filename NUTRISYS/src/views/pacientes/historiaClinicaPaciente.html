@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historia Clínica</title>
+    <link rel="stylesheet" href="/css/normalize.css"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet">   
+    <link rel="stylesheet" href="/css/estilos_historiaClinicaPaciente.css"> 
+    <script src="/js/pacientes/codigo_historiaClinicaPaciente.js"></script>
+</head>
+<body>
+
+    <div class="aside">
+        <div class="logo">
+            <img class="logo__manzana " src="/img/Logo Final Blanco sin texto-01.png" alt="Imagen Logo">
+            <h1 class="name_app flex__textItem" >Nutry-Sys</h1>
+        </div>
+        <div class="menuPrincipal">
+            <div class="contenedorOpciones">
+                <a class="contenedorOpciones__opcion" href="">Organizador</a>
+                <a class="contenedorOpciones__opcion" href="../buscarpaciente">Historia Clínica</a>
+                <a class="contenedorOpciones__opcion" href="">Reportes</a>
+                <a class="contenedorOpciones__opcion" href="">Administración de Usuarios</a>
+            </div>
+        </div>
+    </div>
+    <div class="contenidoPrincipal">
+        <div class="accesoRapido">
+            <img class="flex__imageItem--small" src="/img/MenuLogo.png" alt="Imagen Logo">
+            <h2 class="flex__textItem titulo">Historia Clínica</h2>
+            <img class="flex__imageItem--small" src="/img/NotifyLogo.png" alt="Imagen Logo">
+            <img class="flex__imageItem--small" src="/img/UserLogo.png" alt="Imagen Logo">
+            <h2 class="flex__textItem">Apellido, Nombre</h2>
+        </div>
+
+        <!-- Pagina variable -->
+
+        <div class="contenidoPagina">
+
+            <article class="contenido__article">
+                <section class="section__historiaClinica">
+                    <div class="encabezado__datosPaciente" id="pac_datos">
+                        
+                    </div>
+                    <div class="resumen">
+                        
+                        <div class="resumen__navegación">
+                            <a class="resumen__solapa"  href="../consultapacientefichainicial/0">Ficha Inicial</a>
+                            <a class="resumen__solapa--seleccionado" href="../consultapaciente/0">Resumen</a>
+                            <a class="resumen__solapa" href="../consultapacienteevolucion/0">Evoluciones</a>
+                            <a class="resumen__solapa" href="../consultapacientefichas/0">Fichas</a>
+                            <a class="resumen__solapa" href="../consultapacienteplan/0">Planes</a>
+                            <a class="resumen__solapa" href="../consultapacientedocumentos/0">Documentos</a>
+                            <a class="resumen__solapa" href="../consultapacienteestudios/0">Estudios</a>
+                            <a class="resumen__solapa--resto"></a>
+                        </div>
+
+                        
+                        <div class="resumen__contenido">
+                            <div class="resumen__contenidoDerIzq">
+                                <div class="resumen__datos">
+                                    <div class="resumen__contenedorTitulo">
+                                        <h2 class="resumen__Titulo">Datos Personales</h2>
+                                        <input type="button" value="Editar" class="normal btnEditar" onclick="">
+                                    </div>
+                                    <div class="datos__personales" id="pac_datospersonales">
+                                        
+                                    </div>
+                                </div>
+                                <div class="resumen__datos">
+                                    <div class="resumen__contenedorTitulo">
+                                        <h2 class="resumen__Titulo">Datos Nutriconales Actuales</h2>
+                                    </div>
+                                    <div class="datos__nutricionales">
+                                        <h3>Peso Actual: 75,4 Kg.</h3>
+                                        <h3>Talla:</h3>
+                                        <h3>BMI:</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="resumen__contenidoDerIzq">
+                                <div class="resumen__datos">
+                                    <div class="resumen__contenedorTitulo">
+                                        <h2 class="resumen__Titulo">Datos Personales - Observaciones</h2>
+                                    </div>
+                                    <div>
+                                        <textarea name="paragraph_text" class="texto__libre"  cols="50" rows="10"></textarea>
+                                    </div>
+                                </div>
+                                <div class="resumen__datos">
+                                    <div class="resumen__contenedorTitulo">
+                                        <h2 class="resumen__Titulo">Datos Personales - Observaciones</h2>
+                                    </div>
+                                    <div>
+                                        <textarea name="paragraph_text" class="texto__libre" cols="50" rows="10"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            
+                        </div>
+                    </div>
+                </section>
+            </article>
+
+        </div>
+
+    </div>
+    
+</body>
+</html>
