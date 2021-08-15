@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historia Clínica</title>
+    <link rel="stylesheet" href="css/normalize.css"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet">   
+    <link rel="stylesheet" href="css/estilos_Fichas_AnamnesisAlimentaria.css"> <!-- Cambiar en cada Solapa -->
+
+</head>
+<body>
+
+    <div class="aside">
+        <div class="logo">
+            <img class="logo__manzana " src="img/Logo Final Blanco sin texto-01.png" alt="Imagen Logo">
+            <h1 class="name_app flex__textItem" >Nutry-Sys</h1>
+        </div>
+        <div class="menuPrincipal">
+            <div class="contenedorOpciones">
+                <a class="contenedorOpciones__opcion" href="">Organizador</a>
+                <a class="contenedorOpciones__opcion" href="">Historia Clínica</a>
+                <a class="contenedorOpciones__opcion" href="">Reportes</a>
+                <a class="contenedorOpciones__opcion" href="">Administración de Usuarios</a>
+            </div>
+        </div>
+    </div>
+    <div class="contenidoPrincipal">
+        <div class="accesoRapido">
+            <div class="menuIcon">
+                <img class="flex__imageItem--small" src="./img/MenuLogo.png" alt="Imagen Logo">
+            </div>
+            <h2 class="flex__textItem titulo">Historia Clínica</h2>
+            <div class="notifYUsuario">
+                <img class="flex__imageItem--small" src="./img/NotifyLogo.png" alt="Imagen Logo">
+                <img class="flex__imageItem--small" src="./img/UserLogo.png" alt="Imagen Logo">
+                <h2 class="flex__textItem">Apellido, Nombre</h2>
+            </div>
+        </div>
+
+        <!-- Pagina variable -->
+
+        <div class="contenidoPagina">
+
+            <article class="contenido__article">
+                <section class="section__historiaClinica">
+                    <div class="encabezado__datosPaciente">
+                        <h2>Paciente: Gonzalez, Eugenio</h2>
+                        <h2>HC: 709543</h2>
+                        <h2>DOC.: 23465973</h2>
+                        <h2>FN: 05/06/1975</h2>
+                    </div>
+                    <div class="evoluciones"> <!-- Cambiar En cada Solapa -->
+                        <div class="navegacion__solapas">
+                            <a class="nav__solapa" href="../html/fichaInicialPaciente.html">Ficha inicial</a>
+                            <a class="nav__solapa--seleccionado"  href="../html/anamnesisAlimentaria.html">Anamnesis alimentaria</a>
+                            <a class="nav__solapa" href="../html/habitosNoSaludables.html">Habitos no saludables</a>
+                            <a class="nav__solapa" href="../html/medidasAntropometricas.html">Medidas antropométricas</a>
+                            <a class="nav__solapa--resto"></a>
+                        </div>
+                        <div class="contenido__solapa">
+                            <h2>Anámnesis Alimentaria</h2>
+                            <div class="seccion__carne">
+                                <div class="carne__titulo">
+                                    <h2 class="titulo__seccion">Carne</h2>
+                                </div>
+                                <div class="carne__cuestionario">
+                                    <h2>Vacuna:</h2>
+                                    <input type="checkbox">
+                                    <h2>Con grasa:</h2>
+                                    <input type="checkbox">
+                                    <h2>Sin grasa:</h2>
+                                    <input type="checkbox">
+                                    <h2>Pollo:</h2>
+                                    <input type="checkbox">
+                                    <h2>Con piel:</h2>
+                                    <input type="checkbox">
+                                    <h2>Sin piel:</h2>
+                                    <input type="checkbox">
+                                    <h2>Pescado:</h2>
+                                    <input type="checkbox">
+                                    <h2>Rio:</h2>
+                                    <input type="checkbox">
+                                    <h2>Mar:</h2>
+                                    <input type="checkbox">
+                                    <h2>Cerdo:</h2>
+                                    <input type="checkbox">
+                                    <input type="text">
+                                    <h2>Visceras:</h2>
+                                    <input type="checkbox">
+                                    <h2>Hígado:</h2>
+                                    <input type="checkbox">
+                                    <h2>Riñon:</h2>
+                                    <input type="checkbox">
+                                    <h2>Otros:</h2>
+                                    <textarea name="otros1" id="otros1" cols="30" rows="10"></textarea>
+                                    <h2>Fiambres:</h2>
+                                    <input type="checkbox">
+                                    <input type="text">
+                                    <h2>Embutidos:</h2>
+                                    <input type="checkbox">
+                                    <h2>Salchicas:</h2>
+                                    <input type="checkbox">
+                                    <h2>Chorizo:</h2>
+                                    <input type="checkbox">
+                                    <h2>Morcilla:</h2>
+                                    <input type="checkbox">
+                                </div>
+                            </div>
+                            <div class="seccion__carne">
+                                <div class="carne__titulo">
+                                    <h2 class="titulo__seccion">Lácteos</h2>
+                                </div>
+                                <div class="carne__cuestionario">
+    
+                                </div>
+                            </div>
+                            <div class="seccion__carne">
+                                <div class="carne__titulo">
+                                    <h2 class="titulo__seccion">Huevos</h2>
+                                </div>
+                                <div class="carne__cuestionario">
+    
+                                </div>
+                            </div>
+                            <div class="seccion__carne">
+                                <div class="carne__titulo">
+                                    <h2 class="titulo__seccion">Vegetales</h2>
+                                </div>
+                                <div class="carne__cuestionario">
+    
+                                </div>
+                            </div>
+                            <div class="seccion__carne">
+                                <div class="carne__titulo">
+                                    <h2 class="titulo__seccion">Panificación</h2>
+                                </div>
+                                <div class="carne__cuestionario">
+    
+                                </div>
+                            </div>
+                            <div class="seccion__carne">
+                                <div class="carne__titulo">
+                                    <h2 class="titulo__seccion">Azúucares</h2>
+                                </div>
+                                <div class="carne__cuestionario">
+    
+                                </div>
+                            </div>
+                            <div class="seccion__carne">
+                                <div class="carne__titulo">
+                                    <h2 class="titulo__seccion">Aceites</h2>
+                                </div>
+                                <div class="carne__cuestionario">
+    
+                                </div>
+                            </div>
+                            <div class="seccion__carne">
+                                <div class="carne__titulo">
+                                    <h2 class="titulo__seccion">Grasas</h2>
+                                </div>
+                                <div class="carne__cuestionario">
+    
+                                </div>
+                            </div>
+                            <div class="seccion__carne">
+                                <div class="carne__titulo">
+                                    <h2 class="titulo__seccion">Sal</h2>
+                                </div>
+                                <div class="carne__cuestionario">
+    
+                                </div>
+                            </div>
+                            <div class="seccion__carne">
+                                <div class="carne__titulo">
+                                    <h2 class="titulo__seccion">Bebidas-Infusiones</h2>
+                                </div>
+                                <div class="carne__cuestionario">
+    
+                                </div>
+                            </div>
+                            <div class="seccion__carne">
+                                <div class="carne__titulo">
+                                    <h2 class="titulo__seccion">Alcohol</h2>
+                                </div>
+                                <div class="carne__cuestionario">
+    
+                                </div>
+                            </div>
+                            <div class="seccion__carne">
+                                <div class="carne__titulo">
+                                    <h2 class="titulo__seccion">Comidas del día</h2>
+                                </div>
+                                <div class="carne__cuestionario">
+    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </article>
+
+        </div>
+
+    </div>
+    
+</body>
+</html>

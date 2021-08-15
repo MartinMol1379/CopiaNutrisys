@@ -1,0 +1,423 @@
+:root{
+
+    --primario: #00d500;
+    --secundario: #00aa00;
+    --blanco: #fff;
+    --negro: #000;
+    --grisClaro: #f0f3f4;
+    --grisMedio: #e5e5e5;
+    --grisOscuro: #acadac;
+
+    --fuentePrincipal: 'Amatic+SC', cursive;
+}
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+    /*Solucion Corte*/
+    height: 100%;
+}
+
+
+html, body{
+    width:100%;
+    margin: 0;
+    height: 100%;
+    /*display: flex;*/
+
+  }
+
+
+
+    /*** Responsivo ***/
+
+    @media (min-width: 700px) {
+   
+        body{
+        display: flex;
+       }   
+    
+      }
+    
+      @media (max-width: 699px) {
+        .menuPrincipal{
+           padding-bottom: 4rem;
+        }
+    
+      }
+
+  *, *:before, *:after{
+    box-sizing: inherit;
+}
+
+h1{
+    text-align: center;
+    color: var(--negro);
+    font-family: var(--fuentePrincipal);
+    font-size: 10rem;
+}
+
+h2{
+    color: var(--negro);
+    font-family: var(--fuentePrincipal);
+    font-size: 2rem;
+} 
+
+h3{
+    color: var(--negro);
+    font-family: var(--fuentePrincipal);
+    font-size: 1.5rem;
+}
+
+
+.flex-imageItem{
+    width: 10rem;
+    height: 10rem;
+    margin: 1rem  auto;
+}
+
+.flex-imageItem--small{
+    width: 5rem;
+    height: 5rem;
+    margin: 1rem  auto;
+}
+
+/*************************/
+/** CONTENIDO A UN LADO **/
+/*************************/
+
+.aside{
+    display: flex;
+    flex-direction: column;
+}
+
+/** LOGO **/
+
+.logo{
+    background-color: var(--secundario);
+    display: flex;
+    justify-content:space-between;
+    gap: 1rem;
+    min-width: 20%;
+}
+
+.name_app{
+    margin: 0 auto;
+    font-size: 3rem;
+    color: var(--blanco);
+    font-family: var(--fuentePrincipal);
+    padding: 1rem;
+}
+
+.logo__manzana{
+    width: 8rem;
+    height: 8rem;
+    margin: 1rem  0rem 1rem 4rem;
+}
+
+/** MENU **/
+
+.menuPrincipal{
+    background-color: var(--primario);
+    height:200%;
+    margin-bottom:auto;
+}
+
+.contenedorOpciones{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-between;
+    max-height: 100% ;
+    padding-top: 4rem;
+
+}
+
+.contenedorOpciones__opcion{
+
+    padding: 1rem;
+    text-decoration: none;
+    font-size: 2rem;
+    color: var(--negro);
+    font-family: var(--fuentePrincipal);
+    font-weight: bold;
+}
+
+.contenedorOpciones__opcion:hover{
+    background-color: var(--secundario);
+    color: var(--blanco);
+}
+
+/*************************/
+/** CONTENIDO PRINCIPAL **/
+/*************************/
+
+.contenidoPrincipal{
+    display: flex;
+    flex-direction: column;
+    width: 100% !important;
+    background-color: var(--grisClaro);
+}
+
+.accesoRapido{
+    
+    display: flex;
+    background-color: white;
+    align-items: center;
+    justify-content:space-between;
+    width: 100%;
+}
+
+.menuIcon{
+    display: flex;
+    align-items: flex-start;
+    padding-left: 2rem ;
+}
+
+.notifYUsuario{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-around;
+    gap: 2rem;
+    margin-right: 2rem;
+}
+
+.contenidoPagina{
+    display: flex;
+    flex-direction: column;
+}
+
+/* .carne__cuestionario{
+    display: grid;
+    grid-template-columns: repeat(3,3fr 1fr) ;
+    align-items: center;
+} */
+
+.section__historiaClinica{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--grisMedio);
+    margin: 2rem;
+}
+
+.encabezado__datosPaciente{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 5rem;
+}
+
+.evoluciones{
+    display: flex;
+    flex-direction: column;
+    margin: 0 2rem;
+}
+
+.navegacion__solapas{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.nav__solapa{
+    width: 20%;
+    border: black 0.3rem;
+    border-style: solid;
+    text-align: center;
+    border-radius: 10px 10px 0px 0px;
+
+    padding: 1rem;
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: var(--negro);
+    font-family: var(--fuentePrincipal);
+    font-weight: bold;
+
+    background-color: var(--grisOscuro);
+
+}
+
+.nav__solapa--seleccionado{
+    width: 20%;
+    border: var(--negro) 0.3rem;
+    border-style: solid solid none solid;
+    text-align: center;
+    border-radius: 10px 10px 0px 0px;
+
+
+    padding: 1rem;
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: var(--negro);
+    font-family: var(--fuentePrincipal);
+    font-weight: bold;
+}
+
+.nav__solapa--resto{
+    width: 20%;
+    border: var(--negro) 0.3rem;
+    border-style: none none solid none;
+}
+
+.contenido__solapa{
+    border: var(--negro) 0.3rem;
+    border-style: none solid solid solid;
+
+    display: flex;
+    flex-direction: column;
+
+    padding: 1rem;
+}
+
+
+
+
+
+
+
+/****************/
+/** UTILIDADES **/
+/****************/
+
+.flex__textItem{
+    margin: auto;
+    text-align: center;
+}
+
+.flex__imageItem{
+    width: 10rem;
+    height: 10rem;
+    margin: 1rem  auto;
+}
+
+.flex__imageItem--small{
+    width: 5rem;
+    height: 5rem;
+    margin: 1rem  auto;
+}
+
+.padding__inputText{
+    font-size: 2rem;
+    font-family: var(--fuentePrincipal);
+}
+
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/** TEXTO **/
+
+.titulo{
+    font-weight: normal;
+    color: var(--grisOscuro);
+    font-size: 3rem;
+}
+
+.subtitulo{
+    font-weight: bold;
+    text-decoration: var(--negro);
+}
+
+.normal{
+    font-size: 2rem;
+    color: var(--negro);
+    font-family: var(--fuentePrincipal);
+    font-weight: bold;
+}
+
+.titulo__seccion{
+    background-color: var(--primario);
+    color: var(--negro);
+    font-weight: normal;
+    padding: 0.5rem 0rem 0.5rem 4rem;
+}
+
+/*** CSS FICHA INICIAL ***/
+
+.seccion__class{
+display: flex;
+column-gap: 1rem;
+margin-left: 2rem;
+}
+.seccion__observaciones{
+    margin-left: 2rem;
+    }
+.area__observaciones{
+    margin-top: 1rem;
+    width: 624px;
+    height: 191px;
+    resize: none;
+    
+}
+.formulario__laboratorios{
+border-color: var(--grisOscuro);
+border-style: solid;
+padding-bottom: 2rem;
+font-family: var(--fuentePrincipal);
+}
+.formulario__laboratorios legend{
+    margin: auto;
+    margin-bottom: auto;
+    font-size: 2.3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;     
+    margin-left: 2rem;  
+}
+.contenido__input{
+    margin: 1rem 0;
+    width: 50%;
+    font-size: 2rem;    
+}
+.contenido__fecha{
+    width: 15%;
+}
+.contenido__edad{
+    width: 15%;
+}
+
+/**datos antropometria**/
+
+.tabla__antro{
+    font-family: var(--fuentePrincipal);
+    border-left: -10rem;
+    border-color: var(--grisOscuro);
+    padding-left: 3rem;
+    margin-left: 11rem;
+    margin-right: 45rem;
+    
+}
+.input__valor{
+    margin-bottom: 1rem;
+}
+
+.label__ficha{
+    width: 20%;
+}
+.tabla__antro--contenido{
+    width: 29%;
+}
+
+.tabla__antro--class{
+    display: flex;
+    column-gap: 1rem;
+}
+
+.boton{
+    margin-top: 4%; 
+    margin-bottom: 5%; 
+    color: var(--primario);
+    margin-left: 130%;
+    background-color: var(--primario);
+    color: var(--blanco);
+    padding-left: 4%;
+    padding-right: 4%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+.boton:hover{
+    background-color:#3abe33;
+}
+
+

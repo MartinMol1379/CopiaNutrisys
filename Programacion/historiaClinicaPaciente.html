@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historia Clínica</title>
+    <link rel="stylesheet" href="css/normalize.css"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet">   
+    <link rel="stylesheet" href="css/estilos_historiaClinicaPaciente.css"> 
+    <script src="js/codigo_historiaClinicaPaciente.js"></script>
+    <script src="js/codigo_registrarPacienteNuevo.js"></script>
+</head>
+<body>
+    <div class="aside">
+        <div class="logo">
+            <img class="logo__manzana " src="./img/Logo Final Blanco sin texto-01.png" alt="Imagen Logo">
+            <h1 class="name_app flex__textItem" >Nutry-Sys</h1>
+        </div>
+        <div class="menuPrincipal">
+            <div class="contenedorOpciones">
+                <a class="contenedorOpciones__opcion" href="">Organizador</a>
+                <a class="contenedorOpciones__opcion" href="historiaClinicaMP.html">Historia Clínica</a>
+                <a class="contenedorOpciones__opcion" href="">Reportes</a>
+                <a class="contenedorOpciones__opcion" href="">Administración de Usuarios</a>
+            </div>
+        </div>
+    </div>
+    <div class="contenidoPrincipal">
+        <div class="accesoRapido">
+            <img class="flex__imageItem--small" src="./img/MenuLogo.png" alt="Imagen Logo">
+            <h2 class="flex__textItem titulo">Historia Clínica</h2>
+            <img class="flex__imageItem--small" src="./img/NotifyLogo.png" alt="Imagen Logo">
+            <img class="flex__imageItem--small" src="./img/UserLogo.png" alt="Imagen Logo">
+            <h2 class="flex__textItem">Apellido, Nombre</h2>
+        </div>
+
+        <!-- Pagina variable -->
+
+        <div class="contenidoPagina">
+
+            <article class="contenido__article">
+                <section class="section__historiaClinica">
+                    <div class="encabezado__datosPaciente">
+                        <h2>Paciente: Gonzalez, Eugenio</h2>
+                        <h2>HC: 709543</h2>
+                        <h2>DOC.: 23465973</h2>
+                        <h2>FN: 05/06/1975</h2>
+                    </div>
+                    <div class="resumen">
+                        
+                        <div class="resumen__navegación">
+                            <a class="resumen__solapa"  href="fichaInicialPaciente.html">Ficha Inicial</a>
+                            <a class="resumen__solapa--seleccionado" href="historiaClinicaPaciente.html">Resumen</a>
+                            <a class="resumen__solapa" href="evolucionesPaciente.html">Evoluciones</a>
+                            <a class="resumen__solapa" href="fichasPaciente.html">Fichas</a>
+                            <a class="resumen__solapa" href="planesPaciente.html">Planes</a>
+                            <a class="resumen__solapa" href="documentosPaciente.html">Documentos</a>
+                            <a class="resumen__solapa" href="estudiosPaciente.html">Estudios</a>
+                            <a class="resumen__solapa--resto"></a>
+                        </div>
+
+                        
+                        <div class="resumen__contenido">
+                            <div class="resumen__contenidoDerIzq">
+                                <div class="resumen__datos">
+                                    <div class="resumen__contenedorTitulo">
+                                        <h2 class="resumen__Titulo">Datos Personales</h2>
+                                        <!-- Modo de Edicion activado -->
+                                        <input type="button" value="Editar" class="normal btnEditar" onclick="activarEdicion()">
+                                    </div>
+                                    <div class="datos__personales">
+                                        <h3>Nacionalidad:</h3>
+                                        <h3>Argentina</h3>
+                                        <h3>Domicilio:</h3>
+                                        <h3>Rio Negro 231</h3>
+                                        <h3>Localidad / Provincia:</h3>
+                                        <h3>Córdoba / Córdoba</h3>
+                                        <h3>Profesión:</h3>
+                                        <h3>Abogado</h3>
+                                        <h3>Celular:</h3>
+                                        <h3>3518130402</h3>
+                                        <h3>Correo:</h3>
+                                        <h3>egonzalez@gmail.com</h3>
+                                    </div>
+                                </div>
+                                <div class="resumen__datos">
+                                    <div class="resumen__contenedorTitulo">
+                                        <h2 class="resumen__Titulo">Datos Nutricionales Actuales</h2>
+                                    </div>
+                                    <div class="datos__nutricionales">
+                                        <h3>Peso Actual: 75,4 Kg.</h3>
+                                        <h3>Talla:</h3>
+                                        <h3>BMI:</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="resumen__contenidoDerIzq">
+                                <div class="resumen__datos">
+                                    <div class="resumen__contenedorTitulo">
+                                        <h2 class="resumen__Titulo">Datos Personales - Observaciones</h2>
+                                    </div>
+                                    <div>
+                                        <textarea name="paragraph_text" class="texto__libre"  cols="50" rows="10"></textarea>
+                                    </div>
+                                </div>
+                                <div class="resumen__datos">
+                                    <div class="resumen__contenedorTitulo">
+                                        <h2 class="resumen__Titulo">Antecedentes y Consideraciones</h2>
+                                    </div>
+                                    <div>
+                                        <textarea name="paragraph_text" class="texto__libre" cols="50" rows="10"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            
+                        </div>
+                    </div>
+                </section>
+            </article>
+
+        </div>
+
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,186 @@
+
+:root{
+    --primario: #00d500;
+    --secundario: #00aa00;
+    --blanco: #fff;
+    --negro: #000;
+    --grisClaro: #f0f3f4;
+    --grisMedio: #e5e5e5;
+    --grisOscuro: #acadac;
+    --fuentePrincipal: 'Amatic+SC', cursive;
+}
+html{
+    font-size: 62.5%; 
+    box-sizing: border-box;  
+}
+
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+body{
+    /* background-color:var(--grisMedio);    */
+    background-image: linear-gradient(to left,var(--grisOscuro) 0%,var(--grisMedio) 30%);
+}
+ .sesion-principal{
+background-color:var(--blanco);
+font-size: 150%;
+text-align: center;
+margin-top: 7%; 
+margin-left: auto;
+margin-right: auto;
+display: flex;
+flex-direction: column;
+min-width: 250px; 
+max-width: 500px; 
+border-radius:5%;
+
+} 
+h1{
+    text-align: left;
+     /* margin-right: 25%;  */
+    /* margin-left: 1px; */
+    font-size: 200%;
+    margin-bottom: 10%;
+    font-family:var(--fuentePrincipal);
+}
+img{
+    margin-left:10%;  
+    margin-right: 10%;
+    width: 70px;
+    height: 70px;
+}
+.imagen{
+margin-top: 5%;
+display: flex;
+}
+.boton-iniciarSesion{
+    margin-top: 4%; 
+    margin-bottom: 5%; 
+    color: var(--primario);
+    margin-left: 14%;
+    background-color: var(--primario);
+    color: var(--blanco);
+    padding-left: 4%;
+    padding-right: 4%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+.boton-iniciarSesion:hover{
+    background-color:#3abe33;
+}
+.formulario-sesion{
+    margin-right: -25%;
+}
+a{
+    font-size: 15px;
+    margin-right: 32%;
+    margin-left: 6%;
+    margin-bottom: 1%;
+    margin-top: -2%;
+    color:blue;
+    text-decoration: none;
+    width: 60%;
+    display: flex;
+}
+h2{
+    margin-right: 30%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 250%;
+    font-weight: lighter;
+    display: flex;
+    justify-content: space-around; 
+    align-items: center;
+}
+
+/* ---------estilos de usuario y contraseña------- */
+.usuario {
+    border-bottom: 1px solid black;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    margin-right: 25%;
+    outline: none;
+    width: 60%;
+}
+#contraseña{
+    border-bottom: 1px solid black;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    outline: none; /*quita el recuadro al hacerle click*/
+    margin-right: 25%;
+    margin-top: 2%;
+    width: 60%;
+}
+#mostrarClave{ 
+    margin-left: 26rem;
+    margin-top: -2rem; /*-8 IMPORTANTE PARA QUE SEA RESPONSIVO*/
+    padding-left: 0rem;
+    padding-top: 0rem;
+    height: 10%;
+    width: 10%;
+    padding-right: 0rem;
+    /* cursor: pointer;  */
+}
+
+#mostrarClave{
+    margin-left: 23rem;
+    height: 6%;
+    width: 5%;
+}
+.campos-contraseña{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/*---------------------------------------*/
+
+@media(min-width:500px){
+    .sombra{
+        /* border-radius: 1rem;  */
+        -webkit-box-shadow: 7px 2px 15px -1px rgba(0,0,0,0.3);
+        -moz-box-shadow: 7px 2px 15px -1px rgba(0,0,0,0.3);
+        box-shadow: 7px 2px 15px -1px rgba(0,0,0,0.3);
+        padding: 3rem;
+    }
+}
+
+/* AJUSTES RESPONSIVE*/
+
+ @media(max-width:500px){   
+   .formulario-sesion a{
+       margin-right: 23%;
+   }
+       .iniciar-sesion{
+        margin-right: -9%;
+        font-size: 85%;
+      } 
+      .imagen{
+        margin-top: 30px;
+        margin-left: -1%;
+    } 
+    .boton-iniciarSesion{
+        margin-left: 10%;
+    }
+    .sesion-principal{
+        background: none;
+        margin-left: auto;
+        margin-top: auto; 
+        border:none;
+    }
+    .usuario{
+        background: none;
+    }
+    #contraseña{
+        background: none;
+    }
+    body{
+        background: var(--blanco);
+        margin-top: 20%;
+    }
+        #mostrarClave{ 
+            margin-left: 20rem;  /*18 IMPORTANTE PARA QUE SEA RESPONSIVO*/
+            margin-top: -1.8rem;  /*-8 IMPORTANTE PARA QUE SEA RESPONSIVO*/
+            margin-right: -2rem;
+        }
+    }

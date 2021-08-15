@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historia Clínica</title>
+    <link rel="stylesheet" href="css/normalize.css"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet">   
+    <link rel="stylesheet" href="./css/estilos_Fichas_FichaInicial.css"> <!-- Cambiar en cada Solapa -->
+
+</head>
+<body>
+
+    <div class="aside">
+        <div class="logo">
+            <img class="logo__manzana " src="img/Logo Final Blanco sin texto-01.png" alt="Imagen Logo">
+            <h1 class="name_app flex__textItem" >Nutry-Sys</h1>
+        </div>
+        <div class="menuPrincipal">
+            <div class="contenedorOpciones">
+                <a class="contenedorOpciones__opcion" href="">Organizador</a>
+                <a class="contenedorOpciones__opcion" href="">Historia Clínica</a>
+                <a class="contenedorOpciones__opcion" href="">Reportes</a>
+                <a class="contenedorOpciones__opcion" href="">Administración de Usuarios</a>
+            </div>
+        </div>
+    </div>
+    <div class="contenidoPrincipal">
+        <div class="accesoRapido">
+            <div class="menuIcon">
+                <img class="flex__imageItem--small" src="./img/MenuLogo.png" alt="Imagen Logo"> 
+                
+            </div>
+            <h2 class="flex__textItem titulo">Ficha inicial</h2>
+            <div class="notifYUsuario">
+                <img class="flex__imageItem--small" src="./img/NotifyLogo.png" alt="Imagen Logo">
+                <img class="flex__imageItem--small" src="./img/UserLogo.png" alt="Imagen Logo">
+
+                
+                <h2 class="flex__textItem">Apellido, Nombre</h2>
+            </div>
+        </div>
+
+        <!-- Pagina variable -->
+
+        <div class="contenidoPagina">
+
+            <article class="contenido__article">
+                <section class="section__historiaClinica">
+                    <div class="encabezado__datosPaciente">
+                        <h2>Paciente: Gonzalez, Eugenio</h2>
+                        <h2>HC: 709543</h2>
+                        <h2>DOC.: 23465973</h2>
+                        <h2>FN: 05/06/1975</h2>
+                    </div>
+                    <div class="evoluciones"> <!-- Cambiar En cada Solapa -->
+                        <div class="navegacion__solapas">
+                            <a class="nav__solapa--seleccionado" href="../html/fichaInicialPaciente.html">Ficha inicial</a>
+                            <a class="nav__solapa"  href="../html/anamnesisAlimentaria.html">Anamnesis alimentaria</a>
+                            <a class="nav__solapa" href="../html/habitosNoSaludables.html">Habitos no saludables</a>
+                            <a class="nav__solapa" href="../html/medidasAntropometricas.html">Medidas antropométricas</a>
+                            <a class="nav__solapa--resto"></a>
+                        </div>
+                        <div class="contenido__solapa">
+                            <div class="seccion__carne"> <!-- contiene el cuestionario-->
+                                <div class="carne__titulo">
+                                    <h2 class="titulo__seccion">Ficha inicial</h2>
+                                    </div>
+                                    <div class="seccion__class">
+                                    <h2 class="label__ficha"> Fecha actual:</h2>
+                                        <input class="contenido__input contenido__fecha" type="date">
+                                    </div>
+
+                                    <div class="seccion__class">
+                                    <h2 class="label__ficha">Diag. médico:</h2>
+                                    <input class="contenido__input" type="text" placeholder="Ingrese el diagnóstico médico">
+                                    </div>
+
+                                    <div class="seccion__class">
+                                    <h2 class="label__ficha">Antecedentes:</h2>
+                                    <input class="contenido__input" type="text" placeholder="Ingrese los antecedentes médicos">
+                                    </div>
+
+                                    <div class="formulario__laboratorios"> <!-- laboratorios-->
+                                        <legend>Laboratorios</legend>
+                                         <div class="seccion__class">
+                                            <h2 class="label__ficha">Últimos:</h2>
+                                            <input class="contenido__input" type="number">
+                                        </div>
+
+                                        <div class="seccion__class">
+                                            <h2 class="label__ficha" >Fecha:</h2>
+                                            <input class="contenido__input contenido__fecha" type="date">
+                                        </div>
+
+                                        <div class="seccion__observaciones">
+                                            <h2 class="label__ficha">Observaciones:</h2>
+                                            <textarea class="area__observaciones"></textarea>
+                                        </div>
+
+                                    </div>
+                                    <div class="seccion__class">
+                                        <h2 class="label__ficha">Medicación:</h2>
+                                        <input class="contenido__input" type="text" placeholder="Ingrese las medicaciones">
+                                    </div>
+
+                                    <div class="seccion__class">
+                                        <h2 class="label__ficha">Actividad física:</h2>
+                                        <input class="contenido__input" type="text" placeholder="correr,ir al gimnasio,andar en bici,etc">
+                                    </div>
+
+                                    <div class="seccion__class">
+                                        <h2 class="label__ficha">Tarea o ocupación:</h2>
+                                        <input class="contenido__input" type="text">
+                                    </div>
+
+                                    <div class="seccion__class">
+                                        <h2 class="label__ficha">Antecedentes nutricionales anteriores:</h2>
+                                        <input class="contenido__input" type="text" >
+                                    </div>
+
+                                    <div class="seccion__class ">
+                                        <h2 class="label__ficha">¿A que edad empezó su primera dieta?</h2>
+                                        <input class="contenido__input contenido__edad" type="number" min="1">
+                                    </div>
+
+                                </div>
+    <!-- ------------------------------------------------------------------------------------------------------------------------------->
+
+                                <div class="seccion__carne"> <!-- contiene la seccion de antropometía-->
+                                    <div class="carne__titulo">
+                                        <h2 class="titulo__seccion">Antropometría</h2>
+                                        <div class="tabla__antro">
+                                            
+                                                    <div class="tabla__antro--class" >
+                                                    <h2 class="tabla__antro--contenido" >Peso máximo </h2>
+                                                    <input class="input__valor" type="number" placeholder="kg">
+                                                    </div>
+                                                    <div class="tabla__antro--class">
+                                                        <h2 class="tabla__antro--contenido" >Peso mínimo </h2>
+                                                        <input class="input__valor" type="number" placeholder="kg">
+                                                    </div>
+                                                    
+                                                    <div class="tabla__antro--class">
+                                                        <h2 class="tabla__antro--contenido" >P.A </h2>
+                                                    <input class="input__valor" type="number" placeholder="kg">
+                                                    </div>
+
+                                                    <div class="tabla__antro--class">
+                                                        <h2 class="tabla__antro--contenido" >P.H </h2>
+                                                        <input class="input__valor" type="number" placeholder="kg">
+                                                    </div>
+
+                                                    <div class="tabla__antro--class">
+                                                        <h2 class="tabla__antro--contenido" >Talla </h2>
+                                                    <input class="input__valor" type="number" placeholder="kg">
+                                                    </div>
+                                                    <div class="tabla__antro--class">
+                                                        <h2 class="tabla__antro--contenido" >P/B.M.I </h2>
+                                                    <input class="input__valor" type="number" placeholder="kg">
+                                                    </div>
+
+
+                                                    <div class="tabla__antro--class">
+                                                        <h2 class="tabla__antro--contenido" >B.M.I </h2>
+                                                    <input class="input__valor" type="number" placeholder="kg/mts2">
+                                                    </div>
+
+                                                    <div class="tabla__antro--class">
+                                                        <h2 class="tabla__antro--contenido" >P.D </h2>
+                                                    <input class="input__valor" type="number" placeholder="kg">
+                                                    </div>
+
+                                                    <div class="tabla__antro--class">
+                                                        <h2 class="tabla__antro--contenido" >Peso </h2>
+                                                    <input class="input__valor" type="number" placeholder="kg">
+                                                    </div>
+
+                                                    <div class="tabla__antro--class">
+                                                        <h2 class="tabla__antro--contenido" >Grasa corporal </h2>
+                                                    <input class="input__valor" type="number" placeholder="%">
+                                                    </div>
+
+                                                    <div class="tabla__antro--class">
+                                                        <h2 class="tabla__antro--contenido"> Grasa visceral </h2>
+                                                    <input class="input__valor" type="number" placeholder="%">
+                                                    </div>
+
+                                                    <div class="tabla__antro--class">
+                                                        <h2 class="tabla__antro--contenido" >Masa muscular </h2>
+                                                    <input class="input__valor" type="number" placeholder="%">
+                                                    </div>
+
+                                                    <div class="tabla__antro--class">
+                                                    <h2 class="tabla__antro--contenido">Diam. de la cintura</h2>
+                                                    <input class="input__valor" type="number" placeholder="cm(M)">
+                                                    <input class="input__valor" type="number" placeholder="cm(U)">
+                                                    </div>
+                                                    <input class="boton" type="submit" name="Guardar" value="Guardar">
+                                                </div> <!-- fin div que contiene toda la tabla de antro-->
+                                            
+                                        </div> 
+                                        </div>
+
+
+                            </div>
+                            
+                            
+                               
+                            
+                        </div>
+                    </div>
+                </section>
+            </article>
+
+        </div>
+
+    </div>
+    
+</body>
+</html>
